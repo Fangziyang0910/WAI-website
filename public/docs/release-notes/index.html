@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>版本记录 · WAI 乡村经营智能体 文档</title>
+<meta name="description" content="版本记录以仓库 tag 为准；这里只列当前产品事实与主要变更。">
+<meta name="color-scheme" content="light dark">
+<link rel="canonical" href="https://fangziyang0910.github.io/WAI/docs/release-notes/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="WAI 乡村经营智能体">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:url" content="https://fangziyang0910.github.io/WAI/docs/release-notes/">
+<meta property="og:title" content="版本记录 · WAI 乡村经营智能体 文档">
+<meta property="og:description" content="版本记录以仓库 tag 为准；这里只列当前产品事实与主要变更。">
+<meta property="og:image" content="https://fangziyang0910.github.io/WAI/assets/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="../../assets/wai-logo.png" type="image/png">
+<link rel="stylesheet" href="../../site.css">
+<script>try{var t=localStorage.getItem('ra-theme');if(t==='dark'||t==='light')document.documentElement.dataset.theme=t}catch(e){}</script>
+</head>
+<body class="page-docs">
+<header class="topbar"><div class="topbar-in wide">
+      <button class="icon-btn only-narrow" type="button" data-nav-open aria-label="打开文档目录"><svg viewBox="0 0 20 20" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><path d="M3 6h14M3 10h14M3 14h14"/></svg></button>
+      <a class="brand" href="../../" aria-label="WAI 乡村经营智能体 首页"><img src="../../assets/wai-logo.png" alt="" width="28" height="28"><span>WAI 乡村经营智能体</span></a><a class="crumb-doc" href="../../docs/overview/">文档</a>
+      <nav class="topnav"><a href="../../">产品介绍</a><a href="../../docs/quick-start/">快速开始</a><a href="../../docs/troubleshooting/">常见问题</a></nav>
+      <div class="topbar-end"><button class="search-btn" type="button" data-search-open><svg viewBox="0 0 20 20" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="9" cy="9" r="5.5"/><path d="m13.5 13.5 3.5 3.5"/></svg><span>搜索文档</span><kbd>Ctrl K</kbd></button><button class="icon-btn" type="button" data-theme-toggle aria-label="切换深色或浅色"><svg viewBox="0 0 20 20" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M16.5 11.5A6.5 6.5 0 0 1 8.5 3.5a6.5 6.5 0 1 0 8 8Z"/></svg></button></div>
+    </div></header>
+<div class="docs wide">
+    <aside class="side" data-side><div class="side-scroll"><div class="side-group"><h4>入门</h4><a href="../../docs/overview/">产品概览</a><a href="../../docs/quick-start/">快速开始</a></div><div class="side-group"><h4>界面与基本操作</h4><a href="../../docs/login-and-interface/">登录与界面</a><a href="../../docs/composer/">输入框与发送</a><a href="../../docs/read-answer/">回答的组成</a><a href="../../docs/thread-details/">会话详情</a></div><div class="side-group"><h4>两种工作方式</h4><a href="../../docs/modes/">Chat 与 Work</a><a href="../../docs/chat-mode/">Chat</a><a href="../../docs/work-mode/">Work</a></div><div class="side-group"><h4>资料与检索</h4><a href="../../docs/upload-files/">上传图片和文件</a><a href="../../docs/web-search/">联网搜索</a><a href="../../docs/knowledge-library/">知识库</a></div><div class="side-group"><h4>对话管理</h4><a href="../../docs/conversations/">历史、重试与分支</a></div><div class="side-group"><h4>技能与设置</h4><a href="../../docs/skills/">技能</a><a href="../../docs/settings/">账户设置</a></div><div class="side-group"><h4>管理员手册</h4><a href="../../docs/admin-accounts/">账号与用量管理</a><a href="../../docs/admin-knowledge/">维护知识库</a></div><div class="side-group"><h4>支持</h4><a href="../../docs/release-notes/" class="is-active" aria-current="page">版本记录</a><a href="../../docs/troubleshooting/">常见问题</a></div></div></aside>
+    <div class="side-scrim" data-nav-close hidden></div>
+    <main class="doc"><div class="doc-crumb">支持</div><h1>版本记录</h1>
+      <div class="prose"><p>版本记录以仓库的 Git tag 为准。发布说明、镜像与验收证据随发布提交一起归档，本页不维护独立的版本流水账。</p>
+<p>本页只说明当前产品范围，以及需要用户注意的变更。</p>
+<h2 id="当前产品事实"><a class="anchor" href="#当前产品事实" aria-label="本节链接">#</a>当前产品事实</h2>
+<div class="table-wrap"><table><thead><tr><th>项目</th><th>现行实现</th></tr></thead><tbody><tr><td>工作方式</td><td>只有 Chat 与 Work 两种，新建对话时选定，之后不能更改。见 <a href="../modes/">Chat 与 Work</a></td></tr><tr><td>技能</td><td>共 12 项，为单条消息选用。见<a href="../skills/">技能</a></td></tr><tr><td>个性化</td><td>只保存你自行编写的回答指令。产品不提供个人记忆，助手不读取也不保存跨对话的个人记忆</td></tr><tr><td>用量</td><td>只统计模型 token 与联网调用次数，不是额度</td></tr></tbody></table></div>
+<h2 id="变更说明"><a class="anchor" href="#变更说明" aria-label="本节链接">#</a>变更说明</h2>
+<ul>
+<li><strong>工作方式收敛为 Chat 与 Work。</strong> 早期版本的工作方式划分已取消：Chat 处理日常问答与资料阅读，Work 增加文件编辑、专家协同与文件交付。模式在新建对话时选定且不能更改，需要另一套工具时新建对话。</li>
+<li><strong>个性化只保留你写的指令。</strong> 早期版本的记忆功能已移除，回答指令保持不变。</li>
+<li><strong>用量只做统计。</strong> 用量页显示 token 与联网调用，不限制使用额度。</li>
+</ul>
+<h2 id="相关"><a class="anchor" href="#相关" aria-label="本节链接">#</a>相关</h2>
+<div class="doc-cards"><a href="../../docs/overview/"><b>产品概览</b><span>WAI 乡村经营智能体是面向乡村经营工作的智能体，协助开展工作研究、政策理解、规划编制、方案设计和日常咨询。</span></a><a href="../../docs/modes/"><b>Chat 与 Work</b><span>Chat 与 Work 是两种工作方式，共用一个输入框；区别在于是否组织专家、是否保存和交付文件。</span></a><a href="../../docs/settings/"><b>账户设置</b><span>设置包括三项：常规、个性化、用量。</span></a><a href="../../docs/admin-accounts/"><b>账号与用量管理</b><span>公司管理员管理本组织账号和用量；平台管理员开通组织并指定公司管理员。</span></a><a href="../../docs/skills/"><b>技能</b><span>技能是预先写好的一套工作方法，告诉助手分析某类问题时该看什么、怎么做。</span></a><a href="../../docs/conversations/"><b>历史、重试与分支</b><span>管理历史对话，以及对一条消息重新回答、编辑重发和创建分支。</span></a></div>
+</div><nav class="pager"><a class="pager-prev" href="../../docs/admin-knowledge/"><span>上一页</span>维护知识库</a><a class="pager-next" href="../../docs/troubleshooting/"><span>下一页</span>常见问题</a></nav></main>
+    <aside class="toc" aria-label="本页目录"><h4>本页内容</h4><a class="toc-2" href="#当前产品事实">当前产品事实</a><a class="toc-2" href="#变更说明">变更说明</a><a class="toc-2" href="#相关">相关</a></aside>
+  </div>
+
+<div class="search-modal" data-search-modal hidden>
+  <div class="search-box" role="dialog" aria-modal="true" aria-label="搜索文档">
+    <div class="search-input"><svg viewBox="0 0 20 20" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="9" cy="9" r="5.5"/><path d="m13.5 13.5 3.5 3.5"/></svg><input type="search" placeholder="搜索文档，例如：上传 大小、导出 PDF、创建账号" autocomplete="off" data-search-input></div>
+    <ul class="search-results" data-search-results></ul>
+    <div class="search-foot"><span>↑↓ 选择</span><span>Enter 打开</span><span>Esc 关闭</span></div>
+  </div>
+</div>
+<script>window.RA_ROOT="../../";</script>
+<script src="../../site.js" defer></script>
+</body>
+</html>

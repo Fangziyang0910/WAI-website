@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>维护知识库 · WAI 乡村经营智能体 文档</title>
+<meta name="description" content="管理员向知识库上传文件、导入网页链接，查看、纠正、启用和停用条目，导出和导入整个知识库。">
+<meta name="color-scheme" content="light dark">
+<link rel="canonical" href="https://fangziyang0910.github.io/WAI/docs/admin-knowledge/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="WAI 乡村经营智能体">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:url" content="https://fangziyang0910.github.io/WAI/docs/admin-knowledge/">
+<meta property="og:title" content="维护知识库 · WAI 乡村经营智能体 文档">
+<meta property="og:description" content="管理员向知识库上传文件、导入网页链接，查看、纠正、启用和停用条目，导出和导入整个知识库。">
+<meta property="og:image" content="https://fangziyang0910.github.io/WAI/assets/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="../../assets/wai-logo.png" type="image/png">
+<link rel="stylesheet" href="../../site.css">
+<script>try{var t=localStorage.getItem('ra-theme');if(t==='dark'||t==='light')document.documentElement.dataset.theme=t}catch(e){}</script>
+</head>
+<body class="page-docs">
+<header class="topbar"><div class="topbar-in wide">
+      <button class="icon-btn only-narrow" type="button" data-nav-open aria-label="打开文档目录"><svg viewBox="0 0 20 20" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><path d="M3 6h14M3 10h14M3 14h14"/></svg></button>
+      <a class="brand" href="../../" aria-label="WAI 乡村经营智能体 首页"><img src="../../assets/wai-logo.png" alt="" width="28" height="28"><span>WAI 乡村经营智能体</span></a><a class="crumb-doc" href="../../docs/overview/">文档</a>
+      <nav class="topnav"><a href="../../">产品介绍</a><a href="../../docs/quick-start/">快速开始</a><a href="../../docs/troubleshooting/">常见问题</a></nav>
+      <div class="topbar-end"><button class="search-btn" type="button" data-search-open><svg viewBox="0 0 20 20" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="9" cy="9" r="5.5"/><path d="m13.5 13.5 3.5 3.5"/></svg><span>搜索文档</span><kbd>Ctrl K</kbd></button><button class="icon-btn" type="button" data-theme-toggle aria-label="切换深色或浅色"><svg viewBox="0 0 20 20" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M16.5 11.5A6.5 6.5 0 0 1 8.5 3.5a6.5 6.5 0 1 0 8 8Z"/></svg></button></div>
+    </div></header>
+<div class="docs wide">
+    <aside class="side" data-side><div class="side-scroll"><div class="side-group"><h4>入门</h4><a href="../../docs/overview/">产品概览</a><a href="../../docs/quick-start/">快速开始</a></div><div class="side-group"><h4>界面与基本操作</h4><a href="../../docs/login-and-interface/">登录与界面</a><a href="../../docs/composer/">输入框与发送</a><a href="../../docs/read-answer/">回答的组成</a><a href="../../docs/thread-details/">会话详情</a></div><div class="side-group"><h4>两种工作方式</h4><a href="../../docs/modes/">Chat 与 Work</a><a href="../../docs/chat-mode/">Chat</a><a href="../../docs/work-mode/">Work</a></div><div class="side-group"><h4>资料与检索</h4><a href="../../docs/upload-files/">上传图片和文件</a><a href="../../docs/web-search/">联网搜索</a><a href="../../docs/knowledge-library/">知识库</a></div><div class="side-group"><h4>对话管理</h4><a href="../../docs/conversations/">历史、重试与分支</a></div><div class="side-group"><h4>技能与设置</h4><a href="../../docs/skills/">技能</a><a href="../../docs/settings/">账户设置</a></div><div class="side-group"><h4>管理员手册</h4><a href="../../docs/admin-accounts/">账号与用量管理</a><a href="../../docs/admin-knowledge/" class="is-active" aria-current="page">维护知识库</a></div><div class="side-group"><h4>支持</h4><a href="../../docs/release-notes/">版本记录</a><a href="../../docs/troubleshooting/">常见问题</a></div></div></aside>
+    <div class="side-scrim" data-nav-close hidden></div>
+    <main class="doc"><div class="doc-crumb">管理员手册</div><h1>维护知识库</h1>
+      <div class="prose"><p>助手能参考什么，取决于知识库里有什么。管理员上传政策文件、案例和经验文章，系统自动处理成可以检索的内容。条目有误可以纠正，过期的可以停用。</p>
+<h2 id="进入知识库"><a class="anchor" href="#进入知识库" aria-label="本节链接">#</a>进入知识库</h2>
+<p>知识库的维护只有管理员能做。点左下角的用户卡片，选「管理后台」，再点左侧的「知识库」；也可以从后台左侧栏直接进入。</p>
+<figure class="media" data-media="kb-admin-list"><div class="media-frame"><img src="../../assets/media/kb-admin-list.png" alt="知识库条目列表" loading="lazy" decoding="async"></div></figure>
+<p>知识库分三类材料：<strong>政策、案例、经验</strong>。类型的含义见<a href="../knowledge-library/">知识库</a>。</p>
+<h2 id="查看和查找条目"><a class="anchor" href="#查看和查找条目" aria-label="本节链接">#</a>查看和查找条目</h2>
+<p>列表里每一行是一个知识条目，包含标题、类型、来源、状态和更新时间。</p>
+<ul>
+<li><strong>搜索。</strong> 搜索框按标题匹配；摘要与正文不参与搜索。</li>
+<li><strong>按类型筛选。</strong> 「全部类型」「政策」「案例」「经验」。</li>
+<li><strong>按状态筛选。</strong> 「全部状态」下拉框。</li>
+<li><strong>排序。</strong> 「排序方式」下拉框。</li>
+<li><strong>清除筛选。</strong> 点「清除筛选」恢复全部条目。</li>
+</ul>
+<p>列表按页显示，底部可以翻页、切换每页条数。</p>
+<p>点某一行的标题，进入详情页，可以看到条目的完整内容、决策摘要和类型，以及它被切成的检索片段。</p>
+<h2 id="上传文件"><a class="anchor" href="#上传文件" aria-label="本节链接">#</a>上传文件</h2>
+<figure class="media" data-media="kb-import"><div class="media-frame"><img src="../../assets/media/kb-import.png" alt="导入知识库材料" loading="lazy" decoding="async"></div></figure>
+<ol>
+<li>点「上传文件」。</li>
+<li>点「选择文件」，选一个或多个文件。支持 <strong>PDF、DOCX、MD（.md、.markdown）、TXT、HTML</strong>，可以多选，单个文件不超过 <strong>100 MiB</strong>。</li>
+<li>选择材料类型：政策、案例或经验。</li>
+<li>点「开始上传」。</li>
+</ol>
+<p>文件会逐个上传。一个文件失败，不会影响其他文件。上传结束后，页面提示「已上传 N 个文件」，失败的文件会列出原因。</p>
+<h3 id="知识处理流程"><a class="anchor" href="#知识处理流程" aria-label="本节链接">#</a>知识处理流程</h3>
+<p>上传后，系统自动完成下面几步，不需要手动操作。列表里的状态依次显示：</p>
+<div class="table-wrap"><table><thead><tr><th>状态</th><th>含义</th></tr></thead><tbody><tr><td>已排队</td><td>等待处理</td></tr><tr><td>建立检索内容</td><td>把正文切成片段，计算检索向量并写入索引</td></tr><tr><td>已完成</td><td>可以被助手检索</td></tr></tbody></table></div>
+<p>处理时间随文件长度而不同。列表在有条目处理时会自动刷新。处理失败的条目显示「处理失败」，点「重试」重新处理。</p>
+<p>标题和摘要不调用生成模型：没有填写标题时，依次取正文第一个标题、文件名（去掉扩展名）、正文开头；没有填写摘要时，取正文开头的一段文字。两者都可以在入库后修改。</p>
+<aside class="callout callout-tip"><div class="callout-label">建议</div><div class="callout-body"><p>上传前把类型选对。类型决定条目归入政策、案例还是经验，也是列表筛选和检索的维度；类型可以在编辑里修改，修改后会更新发现索引并提升版本。</p>
+</div></aside>
+<h2 id="导入链接"><a class="anchor" href="#导入链接" aria-label="本节链接">#</a>导入链接</h2>
+<p>对公众号文章、政府网站页面、新闻，不需要先下载文件。</p>
+<ol>
+<li>点「导入链接」。</li>
+<li>粘贴网页链接。</li>
+<li>需要时填写自定义标题；不填，默认使用网页标题。</li>
+<li>选择类型，点「开始导入」。</li>
+</ol>
+<p>系统按网页链接抓取正文，之后的处理与上传文件相同。</p>
+<h2 id="纠正条目内容"><a class="anchor" href="#纠正条目内容" aria-label="本节链接">#</a>纠正条目内容</h2>
+<p>标题和摘要由正文补齐，可能不符合需要。管理员可以直接修改。</p>
+<ol>
+<li>在列表里点某一行的「编辑」。</li>
+<li>修改标题、正文、决策摘要、类型和到期日期。</li>
+<li>点「保存」。正文变化时重建正文索引；标题、摘要或类型变化时更新发现索引并提升版本。</li>
+</ol>
+<p>来源信息（文件名或网页链接）由导入时记录，不在编辑里修改。</p>
+<p>建议在每条材料入库后，至少检查<strong>决策摘要</strong>。助手判断一条材料是否适用，主要读这段摘要。</p>
+<h2 id="启用停用和删除"><a class="anchor" href="#启用停用和删除" aria-label="本节链接">#</a>启用、停用和删除</h2>
+<ul>
+<li><strong>停用。</strong> 条目保留在库里，但助手检索不到它。适合暂时不用的材料。</li>
+<li><strong>启用。</strong> 恢复检索。</li>
+<li><strong>删除。</strong> 条目从知识库移除。点「删除」后需要确认。</li>
+</ul>
+<p>过期的政策建议停用，并在编辑里填写到期日期。条目状态里有「已过期」一项，可以用状态筛选找出它们。</p>
+<p>已经引用过这条材料的历史回答不受影响。历史回答里的引用，仍然显示引用时的正文快照；原条目被删除后，页面会提示原始正文已随条目移除。</p>
+<h3 id="批量操作"><a class="anchor" href="#批量操作" aria-label="本节链接">#</a>批量操作</h3>
+<p>勾选列表左侧的复选框，选中多个条目。点「全选当前页」选中本页全部。选中后，上方出现批量工具条，显示「已选 N 条」，可以批量「启用」「停用」「删除」。部分条目失败时，页面会列出成功和失败的数量及原因。</p>
+<h2 id="导出和导入"><a class="anchor" href="#导出和导入" aria-label="本节链接">#</a>导出和导入</h2>
+<p>点「迁移与备份」。</p>
+<ul>
+<li><strong>导出知识包。</strong> 把知识库里的条目导出为一个 JSON 知识包：标题、类型、正文、摘要、来源与到期日期。一个知识包最多 1000 条。</li>
+<li><strong>导入知识包。</strong> 选择知识包导入。导入按条目重新建立，不携带已发布的检索数据，因此导入后要等索引重建完成。</li>
+</ul>
+<p>用于备份知识库，或者在另一套系统里复用。导入的条目一律为<strong>停用</strong>状态，需要手动启用后才会被助手检索。导入时，如果知识包损坏或格式不兼容，页面提示「导入失败」。</p>
+<p>部分条目没有导入时，面板会保留文件，并列出失败条目在原包中的序号、标题和原因；没有标题时显示「未提供标题」。可重试同一个包，已成功的条目不会重复创建。若要修改内容，请只将失败条目另存为新包，修正后再选择，避免新包重复包含已成功条目。</p>
+<h2 id="维护建议"><a class="anchor" href="#维护建议" aria-label="本节链接">#</a>维护建议</h2>
+<p>知识库的质量取决于材料的质量。定期做三件事：</p>
+<ol>
+<li><strong>核对日期。</strong> 过期的政策停用，或者补上到期日期。</li>
+<li><strong>核对来源。</strong> 条目保存导入时的文件名或网页链接，方便使用者回到原文追溯。</li>
+<li><strong>检查摘要。</strong> 摘要取自正文开头，按材料内容改成更好判断适用性的一句话。</li>
+</ol>
+<h2 id="相关"><a class="anchor" href="#相关" aria-label="本节链接">#</a>相关</h2>
+<div class="doc-cards"><a href="../../docs/knowledge-library/"><b>知识库</b><span>编写材料时，常要参照上级政策、其他地区的做法和成熟经验。知识库把这三类资料预先整理在产品里，提问时让助手先查阅，回答会标明出处。</span></a><a href="../../docs/admin-accounts/"><b>账号与用量管理</b><span>公司管理员管理本组织账号和用量；平台管理员开通组织并指定公司管理员。</span></a><a href="../../docs/troubleshooting/"><b>常见问题</b><span>按现象查原因：登录、上传、回答、导出、分支、个性化、管理。</span></a></div>
+</div><nav class="pager"><a class="pager-prev" href="../../docs/admin-accounts/"><span>上一页</span>账号与用量管理</a><a class="pager-next" href="../../docs/release-notes/"><span>下一页</span>版本记录</a></nav></main>
+    <aside class="toc" aria-label="本页目录"><h4>本页内容</h4><a class="toc-2" href="#进入知识库">进入知识库</a><a class="toc-2" href="#查看和查找条目">查看和查找条目</a><a class="toc-2" href="#上传文件">上传文件</a><a class="toc-3" href="#知识处理流程">知识处理流程</a><a class="toc-2" href="#导入链接">导入链接</a><a class="toc-2" href="#纠正条目内容">纠正条目内容</a><a class="toc-2" href="#启用停用和删除">启用、停用和删除</a><a class="toc-3" href="#批量操作">批量操作</a><a class="toc-2" href="#导出和导入">导出和导入</a><a class="toc-2" href="#维护建议">维护建议</a><a class="toc-2" href="#相关">相关</a></aside>
+  </div>
+
+<div class="search-modal" data-search-modal hidden>
+  <div class="search-box" role="dialog" aria-modal="true" aria-label="搜索文档">
+    <div class="search-input"><svg viewBox="0 0 20 20" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="9" cy="9" r="5.5"/><path d="m13.5 13.5 3.5 3.5"/></svg><input type="search" placeholder="搜索文档，例如：上传 大小、导出 PDF、创建账号" autocomplete="off" data-search-input></div>
+    <ul class="search-results" data-search-results></ul>
+    <div class="search-foot"><span>↑↓ 选择</span><span>Enter 打开</span><span>Esc 关闭</span></div>
+  </div>
+</div>
+<script>window.RA_ROOT="../../";</script>
+<script src="../../site.js" defer></script>
+</body>
+</html>

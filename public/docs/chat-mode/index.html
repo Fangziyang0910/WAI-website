@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chat · WAI 乡村经营智能体 文档</title>
+<meta name="description" content="Chat 由一个助手直接回答，适合日常问答、文字改写和对着文件提问。">
+<meta name="color-scheme" content="light dark">
+<link rel="canonical" href="https://fangziyang0910.github.io/WAI/docs/chat-mode/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="WAI 乡村经营智能体">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:url" content="https://fangziyang0910.github.io/WAI/docs/chat-mode/">
+<meta property="og:title" content="Chat · WAI 乡村经营智能体 文档">
+<meta property="og:description" content="Chat 由一个助手直接回答，适合日常问答、文字改写和对着文件提问。">
+<meta property="og:image" content="https://fangziyang0910.github.io/WAI/assets/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="../../assets/wai-logo.png" type="image/png">
+<link rel="stylesheet" href="../../site.css">
+<script>try{var t=localStorage.getItem('ra-theme');if(t==='dark'||t==='light')document.documentElement.dataset.theme=t}catch(e){}</script>
+</head>
+<body class="page-docs">
+<header class="topbar"><div class="topbar-in wide">
+      <button class="icon-btn only-narrow" type="button" data-nav-open aria-label="打开文档目录"><svg viewBox="0 0 20 20" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><path d="M3 6h14M3 10h14M3 14h14"/></svg></button>
+      <a class="brand" href="../../" aria-label="WAI 乡村经营智能体 首页"><img src="../../assets/wai-logo.png" alt="" width="28" height="28"><span>WAI 乡村经营智能体</span></a><a class="crumb-doc" href="../../docs/overview/">文档</a>
+      <nav class="topnav"><a href="../../">产品介绍</a><a href="../../docs/quick-start/">快速开始</a><a href="../../docs/troubleshooting/">常见问题</a></nav>
+      <div class="topbar-end"><button class="search-btn" type="button" data-search-open><svg viewBox="0 0 20 20" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="9" cy="9" r="5.5"/><path d="m13.5 13.5 3.5 3.5"/></svg><span>搜索文档</span><kbd>Ctrl K</kbd></button><button class="icon-btn" type="button" data-theme-toggle aria-label="切换深色或浅色"><svg viewBox="0 0 20 20" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M16.5 11.5A6.5 6.5 0 0 1 8.5 3.5a6.5 6.5 0 1 0 8 8Z"/></svg></button></div>
+    </div></header>
+<div class="docs wide">
+    <aside class="side" data-side><div class="side-scroll"><div class="side-group"><h4>入门</h4><a href="../../docs/overview/">产品概览</a><a href="../../docs/quick-start/">快速开始</a></div><div class="side-group"><h4>界面与基本操作</h4><a href="../../docs/login-and-interface/">登录与界面</a><a href="../../docs/composer/">输入框与发送</a><a href="../../docs/read-answer/">回答的组成</a><a href="../../docs/thread-details/">会话详情</a></div><div class="side-group"><h4>两种工作方式</h4><a href="../../docs/modes/">Chat 与 Work</a><a href="../../docs/chat-mode/" class="is-active" aria-current="page">Chat</a><a href="../../docs/work-mode/">Work</a></div><div class="side-group"><h4>资料与检索</h4><a href="../../docs/upload-files/">上传图片和文件</a><a href="../../docs/web-search/">联网搜索</a><a href="../../docs/knowledge-library/">知识库</a></div><div class="side-group"><h4>对话管理</h4><a href="../../docs/conversations/">历史、重试与分支</a></div><div class="side-group"><h4>技能与设置</h4><a href="../../docs/skills/">技能</a><a href="../../docs/settings/">账户设置</a></div><div class="side-group"><h4>管理员手册</h4><a href="../../docs/admin-accounts/">账号与用量管理</a><a href="../../docs/admin-knowledge/">维护知识库</a></div><div class="side-group"><h4>支持</h4><a href="../../docs/release-notes/">版本记录</a><a href="../../docs/troubleshooting/">常见问题</a></div></div></aside>
+    <div class="side-scrim" data-nav-close hidden></div>
+    <main class="doc"><div class="doc-crumb">两种工作方式</div><h1>Chat</h1>
+      <div class="prose"><p>日常的案头问题，不需要多位专家分头分析：核对一个条款，改一段汇报材料，对着一份台账算几个数。Chat 适合这类问题，等待时间最短。</p>
+<h2 id="工作方式"><a class="anchor" href="#工作方式" aria-label="本节链接">#</a>工作方式</h2>
+<p>Chat 里只有一个助手。你发送问题后，它直接思考并回答。它不会把任务交给专家，也不建立工作区、不生成文件。</p>
+<p>需要时，它会使用这些工具：</p>
+<ul>
+<li><strong>读取你上传的文件。</strong> 见<a href="../upload-files/">上传图片和文件</a>。</li>
+<li><strong>联网搜索。</strong> 在输入框开启「智能搜索」后可用。见<a href="../web-search/">联网搜索</a>。</li>
+<li><strong>读取知识库。</strong> 在输入框开启「知识库」后可用。见<a href="../knowledge-library/">知识库</a>。</li>
+<li><strong>做计算。</strong> 算式、预算、现金流，由计算工具核算。</li>
+</ul>
+<p>Chat 默认使用当前模型的中档思考强度（DeepSeek <code>high</code>、Qwen <code>medium</code>）。如果问题简单，可以在输入框把思考强度调到 <code>low</code> 或 <code>off</code>；如果问题需要更多推理，可以调到 <code>max</code>（DeepSeek）或 <code>xhigh</code>（Qwen），见<a href="../composer/">输入框与发送</a>。</p>
+<figure class="media" data-media="chat-answer"><div class="media-frame"><img src="../../assets/media/chat-answer.png" alt="Chat 的回答" loading="lazy" decoding="async"></div></figure>
+<h2 id="适用场景"><a class="anchor" href="#适用场景" aria-label="本节链接">#</a>适用场景</h2>
+<h3 id="问一个具体的问题"><a class="anchor" href="#问一个具体的问题" aria-label="本节链接">#</a>问一个具体的问题</h3>
+<div class="code"><button class="code-copy" type="button" aria-label="复制代码">复制</button><pre><code class="language-text">什么是「三变」改革？它适合我们这种没有集体收入的村吗？</code></pre></div>
+<h3 id="对着文件提问"><a class="anchor" href="#对着文件提问" aria-label="本节链接">#</a>对着文件提问</h3>
+<p>先上传文件，再问：</p>
+<div class="code"><button class="code-copy" type="button" aria-label="复制代码">复制</button><pre><code class="language-text">附件是我们村去年的收支表。请算出全年总收入和总支出，并指出哪三项支出占比最大。</code></pre></div>
+<div class="code"><button class="code-copy" type="button" aria-label="复制代码">复制</button><pre><code class="language-text">附件是一份政策文件。请列出申报条件，每条标明原文在第几页。</code></pre></div>
+<h3 id="改写和润色"><a class="anchor" href="#改写和润色" aria-label="本节链接">#</a>改写和润色</h3>
+<div class="code"><button class="code-copy" type="button" aria-label="复制代码">复制</button><pre><code class="language-text">请把下面这段话改写成适合在村民大会上宣讲的口语，不超过 200 字：……</code></pre></div>
+<h3 id="联网查一个事实"><a class="anchor" href="#联网查一个事实" aria-label="本节链接">#</a>联网查一个事实</h3>
+<p>开启「智能搜索」，再问：</p>
+<div class="code"><button class="code-copy" type="button" aria-label="复制代码">复制</button><pre><code class="language-text">兴业县 2026 年有哪些农产品加工扶持政策？请列出政策名称、发布单位和来源链接。</code></pre></div>
+<h2 id="使用技巧"><a class="anchor" href="#使用技巧" aria-label="本节链接">#</a>使用技巧</h2>
+<ul>
+<li><strong>一次问一件事。</strong> 问题太多，回答容易遗漏。拆成几次追问，更清楚。</li>
+<li><strong>给出材料。</strong> 助手只知道你告诉它的和你上传的，不知道你们村的具体情况。</li>
+<li><strong>追问。</strong> 同一段对话里，助手记得前面的内容。「把第二点展开」「换成表格」都可以直接说。</li>
+</ul>
+<p>需要从几个方面同时判断，或者要一份能下载的报告时，新建一段对话，改用 <a href="../work-mode/">Work</a>。</p>
+<h2 id="相关"><a class="anchor" href="#相关" aria-label="本节链接">#</a>相关</h2>
+<div class="doc-cards"><a href="../../docs/modes/"><b>Chat 与 Work</b><span>Chat 与 Work 是两种工作方式，共用一个输入框；区别在于是否组织专家、是否保存和交付文件。</span></a><a href="../../docs/upload-files/"><b>上传图片和文件</b><span>把文件和图片发给助手，让它对着材料回答。</span></a><a href="../../docs/web-search/"><b>联网搜索</b><span>开启「智能搜索」后，助手可以上网查政策、行情和新闻，并列出来源。</span></a></div>
+</div><nav class="pager"><a class="pager-prev" href="../../docs/modes/"><span>上一页</span>Chat 与 Work</a><a class="pager-next" href="../../docs/work-mode/"><span>下一页</span>Work</a></nav></main>
+    <aside class="toc" aria-label="本页目录"><h4>本页内容</h4><a class="toc-2" href="#工作方式">工作方式</a><a class="toc-2" href="#适用场景">适用场景</a><a class="toc-3" href="#问一个具体的问题">问一个具体的问题</a><a class="toc-3" href="#对着文件提问">对着文件提问</a><a class="toc-3" href="#改写和润色">改写和润色</a><a class="toc-3" href="#联网查一个事实">联网查一个事实</a><a class="toc-2" href="#使用技巧">使用技巧</a><a class="toc-2" href="#相关">相关</a></aside>
+  </div>
+
+<div class="search-modal" data-search-modal hidden>
+  <div class="search-box" role="dialog" aria-modal="true" aria-label="搜索文档">
+    <div class="search-input"><svg viewBox="0 0 20 20" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="9" cy="9" r="5.5"/><path d="m13.5 13.5 3.5 3.5"/></svg><input type="search" placeholder="搜索文档，例如：上传 大小、导出 PDF、创建账号" autocomplete="off" data-search-input></div>
+    <ul class="search-results" data-search-results></ul>
+    <div class="search-foot"><span>↑↓ 选择</span><span>Enter 打开</span><span>Esc 关闭</span></div>
+  </div>
+</div>
+<script>window.RA_ROOT="../../";</script>
+<script src="../../site.js" defer></script>
+</body>
+</html>

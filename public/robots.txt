@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://fangziyang0910.github.io/WAI/sitemap.xml

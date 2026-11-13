@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>会话详情 · WAI 乡村经营智能体 文档</title>
+<meta name="description" content="会话详情是对话右侧的面板，集中显示本对话产生的文件、专家和来源。">
+<meta name="color-scheme" content="light dark">
+<link rel="canonical" href="https://fangziyang0910.github.io/WAI/docs/thread-details/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="WAI 乡村经营智能体">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:url" content="https://fangziyang0910.github.io/WAI/docs/thread-details/">
+<meta property="og:title" content="会话详情 · WAI 乡村经营智能体 文档">
+<meta property="og:description" content="会话详情是对话右侧的面板，集中显示本对话产生的文件、专家和来源。">
+<meta property="og:image" content="https://fangziyang0910.github.io/WAI/assets/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="../../assets/wai-logo.png" type="image/png">
+<link rel="stylesheet" href="../../site.css">
+<script>try{var t=localStorage.getItem('ra-theme');if(t==='dark'||t==='light')document.documentElement.dataset.theme=t}catch(e){}</script>
+</head>
+<body class="page-docs">
+<header class="topbar"><div class="topbar-in wide">
+      <button class="icon-btn only-narrow" type="button" data-nav-open aria-label="打开文档目录"><svg viewBox="0 0 20 20" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><path d="M3 6h14M3 10h14M3 14h14"/></svg></button>
+      <a class="brand" href="../../" aria-label="WAI 乡村经营智能体 首页"><img src="../../assets/wai-logo.png" alt="" width="28" height="28"><span>WAI 乡村经营智能体</span></a><a class="crumb-doc" href="../../docs/overview/">文档</a>
+      <nav class="topnav"><a href="../../">产品介绍</a><a href="../../docs/quick-start/">快速开始</a><a href="../../docs/troubleshooting/">常见问题</a></nav>
+      <div class="topbar-end"><button class="search-btn" type="button" data-search-open><svg viewBox="0 0 20 20" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="9" cy="9" r="5.5"/><path d="m13.5 13.5 3.5 3.5"/></svg><span>搜索文档</span><kbd>Ctrl K</kbd></button><button class="icon-btn" type="button" data-theme-toggle aria-label="切换深色或浅色"><svg viewBox="0 0 20 20" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M16.5 11.5A6.5 6.5 0 0 1 8.5 3.5a6.5 6.5 0 1 0 8 8Z"/></svg></button></div>
+    </div></header>
+<div class="docs wide">
+    <aside class="side" data-side><div class="side-scroll"><div class="side-group"><h4>入门</h4><a href="../../docs/overview/">产品概览</a><a href="../../docs/quick-start/">快速开始</a></div><div class="side-group"><h4>界面与基本操作</h4><a href="../../docs/login-and-interface/">登录与界面</a><a href="../../docs/composer/">输入框与发送</a><a href="../../docs/read-answer/">回答的组成</a><a href="../../docs/thread-details/" class="is-active" aria-current="page">会话详情</a></div><div class="side-group"><h4>两种工作方式</h4><a href="../../docs/modes/">Chat 与 Work</a><a href="../../docs/chat-mode/">Chat</a><a href="../../docs/work-mode/">Work</a></div><div class="side-group"><h4>资料与检索</h4><a href="../../docs/upload-files/">上传图片和文件</a><a href="../../docs/web-search/">联网搜索</a><a href="../../docs/knowledge-library/">知识库</a></div><div class="side-group"><h4>对话管理</h4><a href="../../docs/conversations/">历史、重试与分支</a></div><div class="side-group"><h4>技能与设置</h4><a href="../../docs/skills/">技能</a><a href="../../docs/settings/">账户设置</a></div><div class="side-group"><h4>管理员手册</h4><a href="../../docs/admin-accounts/">账号与用量管理</a><a href="../../docs/admin-knowledge/">维护知识库</a></div><div class="side-group"><h4>支持</h4><a href="../../docs/release-notes/">版本记录</a><a href="../../docs/troubleshooting/">常见问题</a></div></div></aside>
+    <div class="side-scrim" data-nav-close hidden></div>
+    <main class="doc"><div class="doc-crumb">界面与基本操作</div><h1>会话详情</h1>
+      <div class="prose"><h2 id="概述"><a class="anchor" href="#概述" aria-label="本节链接">#</a>概述</h2>
+<p>一次规划或论证，会产生报告、专家意见和多条来源。这些成果和依据散落在对话里，交付前逐项核对很费时间。</p>
+<p><strong>会话详情把它们集中放在右侧</strong>，并且一直停在那里，不会随着对话滚动消失。</p>
+<figure class="media" data-media="summary-panel"><div class="media-frame"><img src="../../assets/media/summary-panel.png" alt="会话详情面板" loading="lazy" decoding="async"></div></figure>
+<h2 id="显示条件"><a class="anchor" href="#显示条件" aria-label="本节链接">#</a>显示条件</h2>
+<p>会话详情只在有内容时出现。本轮对话产生了下面任意一种东西，右侧就会出现这个面板：</p>
+<ul>
+<li>助手交付的文件</li>
+<li>参与分析的专家</li>
+<li>联网搜索或知识库的来源</li>
+</ul>
+<p>只是简单问答、没有这些内容时，不显示面板。</p>
+<h2 id="打开和关闭"><a class="anchor" href="#打开和关闭" aria-label="本节链接">#</a>打开和关闭</h2>
+<ul>
+<li>对话页标题栏右端有一个图标，鼠标放上去提示「切换会话详情」。点它打开或收起面板。</li>
+<li>面板标题是「会话详情」，右上角的 × 同样可以收起。</li>
+<li>屏幕宽度足够时，面板嵌在对话右侧，不遮挡对话；屏幕较窄时，以浮层的形式出现。</li>
+</ul>
+<h2 id="四个区块"><a class="anchor" href="#四个区块" aria-label="本节链接">#</a>四个区块</h2>
+<p>面板有四个区块，从上到下依次是<strong>输出、专家、网页来源、知识库</strong>。没有内容的区块不显示。每个区块的标题行右侧显示数量，点标题行可以折叠或展开这个区块。区块里先显示前几项，其余点「查看全部」展开。</p>
+<h3 id="输出"><a class="anchor" href="#输出" aria-label="本节链接">#</a>输出</h3>
+<p><strong>输出是助手交付给你的文件</strong>，比如 Work 写好的报告。</p>
+<figure class="media" data-media="summary-outputs"><div class="media-frame"><img src="../../assets/media/summary-outputs.png" alt="会话详情里的「输出」" loading="lazy" decoding="async"></div></figure>
+<ul>
+<li>每个文件显示为一行，写着文件名。</li>
+<li>点一个文件，页面打开文件预览，可以阅读全文，并下载或导出。详见 <a href="../work-mode/#交付文件">Work</a>。</li>
+<li>文件较多时先显示前 3 个，点「查看全部 N 个文件」显示其余。</li>
+</ul>
+<h3 id="专家"><a class="anchor" href="#专家" aria-label="本节链接">#</a>专家</h3>
+<p><strong>专家是参与分析的专家。</strong> Work 中，主顾问把部分工作交给专家，这些专家列在这个区块。</p>
+<ul>
+<li>每位专家显示一行，写着专家名称、状态和任务。先显示前 4 位，点「查看全部 N 位专家」展开。</li>
+<li>点一位专家，右侧打开这位专家<strong>自己的对话</strong>：领到的任务、用了什么资料和工具、得出的结论都在里面。详见 <a href="../work-mode/#打开一位专家的对话">Work</a>。</li>
+</ul>
+<h3 id="来源"><a class="anchor" href="#来源" aria-label="本节链接">#</a>来源</h3>
+<p><strong>来源是回答引用的材料。</strong> 联网搜索引用的网页，和知识库引用的条目，都汇总在这里。</p>
+<figure class="media" data-media="summary-sources"><div class="media-frame"><img src="../../assets/media/summary-sources.png" alt="会话详情里的「来源」" loading="lazy" decoding="async"></div></figure>
+<ul>
+<li>每个来源显示为一条，写着标题。标题下面标明出处：网页显示网站域名，知识库条目显示「知识库」。</li>
+<li>点网页来源，在新窗口打开原网页。</li>
+<li>点知识库来源，查看知识条目的内容。</li>
+<li>标题行右侧显示来源总数。先显示前 4 条，点「查看全部 N 个来源」展开。</li>
+</ul>
+<h2 id="按目的查找"><a class="anchor" href="#按目的查找" aria-label="本节链接">#</a>按目的查找</h2>
+<div class="table-wrap"><table><thead><tr><th>你想做什么</th><th>看哪个区块</th><th>怎么做</th></tr></thead><tbody><tr><td>找到助手写好的报告</td><td>输出</td><td>点文件名，预览，再下载或导出</td></tr><tr><td>看专家分析进度</td><td>专家</td><td>看专家的状态，或点开专家对话</td></tr><tr><td>了解某个专家怎么得出结论</td><td>专家</td><td>点专家名，读这位专家的对话</td></tr><tr><td>核对政策或数据的原文</td><td>来源</td><td>点来源，打开原网页或知识条目</td></tr><tr><td>一次看清引用了多少材料</td><td>来源</td><td>看标题行右侧的总数</td></tr></tbody></table></div>
+<p>「来源」区块汇总整段对话检索到的全部材料，数量可以很多，例如一次联网搜索可以显示「67 个来源」。展开过程区，还能看到每一次搜索各自的来源。</p>
+<h2 id="相关"><a class="anchor" href="#相关" aria-label="本节链接">#</a>相关</h2>
+<div class="doc-cards"><a href="../../docs/read-answer/"><b>回答的组成</b><span>一条回答由过程区、正文、参考来源和操作行四部分组成。</span></a><a href="../../docs/work-mode/"><b>Work</b><span>Work 由主顾问按需请专家分头分析，再统稿；成果可以直接在页面预览、下载或导出。</span></a></div>
+</div><nav class="pager"><a class="pager-prev" href="../../docs/read-answer/"><span>上一页</span>回答的组成</a><a class="pager-next" href="../../docs/modes/"><span>下一页</span>Chat 与 Work</a></nav></main>
+    <aside class="toc" aria-label="本页目录"><h4>本页内容</h4><a class="toc-2" href="#概述">概述</a><a class="toc-2" href="#显示条件">显示条件</a><a class="toc-2" href="#打开和关闭">打开和关闭</a><a class="toc-2" href="#四个区块">四个区块</a><a class="toc-3" href="#输出">输出</a><a class="toc-3" href="#专家">专家</a><a class="toc-3" href="#来源">来源</a><a class="toc-2" href="#按目的查找">按目的查找</a><a class="toc-2" href="#相关">相关</a></aside>
+  </div>
+
+<div class="search-modal" data-search-modal hidden>
+  <div class="search-box" role="dialog" aria-modal="true" aria-label="搜索文档">
+    <div class="search-input"><svg viewBox="0 0 20 20" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="9" cy="9" r="5.5"/><path d="m13.5 13.5 3.5 3.5"/></svg><input type="search" placeholder="搜索文档，例如：上传 大小、导出 PDF、创建账号" autocomplete="off" data-search-input></div>
+    <ul class="search-results" data-search-results></ul>
+    <div class="search-foot"><span>↑↓ 选择</span><span>Enter 打开</span><span>Esc 关闭</span></div>
+  </div>
+</div>
+<script>window.RA_ROOT="../../";</script>
+<script src="../../site.js" defer></script>
+</body>
+</html>
